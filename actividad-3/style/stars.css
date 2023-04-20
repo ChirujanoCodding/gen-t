@@ -25,6 +25,12 @@ h1 {
     padding: 40px;
 }
 
+#rebellion {
+    background-image: url(../imgs/rebellion.jpg);
+    background-repeat: no-repeat;
+    padding: 40px;
+}
+
 
 #title {
     display: block;
@@ -50,6 +56,14 @@ h1 {
     filter: drop-shadow(0px 0px 15px red);
 }
 
+#luke {
+    filter: drop-shadow(0px 0px 15px lightgreen);
+}
+
+#c3po {
+    filter: drop-shadow(0px 0px 15px gold);
+}
+
 #storm-troopers {
     filter: drop-shadow(0px 0px 15px gray);
 }
@@ -68,13 +82,14 @@ h1 {
 
 .card-container {
     display: flex;
-    margin: auto;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .card {
-    width: 75%;
+    width: 800px;
+    height: 400px;
     display: flex;
     text-align: center;
     overflow: hidden;
@@ -83,7 +98,10 @@ h1 {
 }
 
 .card-image {
-    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
     background-position: center;
     background-image: url(../imgs/death.jpg);
     background-size: cover;
@@ -91,8 +109,7 @@ h1 {
 }
 
 .card-image img {
-    width: 300px;
-    height: 500px;
+    max-width: 50%;
 }
 
 .card-info {
