@@ -1,0 +1,165 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body {
+    background: url(https://wallpapercave.com/wp/wp6631294.jpg)
+}
+
+
+#question {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    backdrop-filter: blur(5px);
+}
+
+#question__title {
+    padding-top: 40px;
+    line-height: .5;
+    text-shadow: 0 0 20px black;
+
+}
+
+#question__title h1 {
+    font-size: 60px;
+}
+
+#question__title b {
+    color: lightgreen;
+    font-size: 30px;
+}
+
+
+#question__description {
+    font-size: 22px;
+    margin: auto;
+    max-width: 50%;
+}
+
+#question__options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#question__options button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#question__options button:hover {
+    font-size: 20px;
+    box-shadow: 0 0 20px lightgreen;
+    transition: all 0.5s ease;
+}
+
+#question__options button:active {
+    background-color: lightgreen;
+    transition: all 0s ease;
+}
+
+
+#question__options a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Opciones */
+
+#answer {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    backdrop-filter: blur(5px);
+}
+
+#answer__title {
+    padding-top: 40px;
+    line-height: .5;
+    text-shadow: 0 0 20px black;
+
+}
+
+#answer__title h1 {
+    color: lightgreen;
+    font-size: 60px;
+}
+
+#answer__title--wrong h1 {
+    padding-top: 40px;
+    line-height: .5;
+    text-shadow: 0 0 20px black;
+    color: lightcoral;
+    font-size: 60px;
+}
+
+#answer__description {
+    font-size: 22px;
+    margin: auto;
+    max-width: 50%;
+}
+
+#answer__options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#answer__options button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#answer__options button:hover {
+    font-size: 20px;
+    box-shadow: 0 0 20px lightgreen;
+    transition: all 0.5s ease;
+}
+
+#answer__options button:active {
+    background-color: lightgreen;
+    transition: all 0s ease;
+}
+
+
+#answer__options a {
+    text-decoration: none;
+    color: black;
+}
