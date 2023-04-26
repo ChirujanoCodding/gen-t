@@ -1,0 +1,12 @@
+:root {
+    --theme-dark-bg: #0F0F13;
+}
+
+body {
+    background-color: var(--theme-dark-bg);
+}
+
+.verde {
+    background-color: lime;
+    border: 1px solid orange
+}
