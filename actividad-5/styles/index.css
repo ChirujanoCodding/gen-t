@@ -1,0 +1,26 @@
+body {
+    margin: 0px auto;
+}
+
+
+.pan {
+    background-color: #deb986;
+    height: 80px;
+}
+
+#salchicha {
+    background-color: #a42c2c;
+    height: 80px;
+    border-radius: 90px;
+}
+
+#pancho-top {
+    border-bottom: 20px solid rgba(0, 0, 0, 0.2);
+    border-radius: 90px 90px 20px 20px;
+}
+
+
+#pancho-bottom {
+    border-radius: 20px 20px 90px 90px;
+    border-top: 20px solid rgba(0, 0, 0, 0.2);
+}
