@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=800
+    , initial-scale=1.0">
+    <title>Register example</title>
+    <link rel="stylesheet" href="styles/register.css">
+</head>
+
+<body>
+    <form id="custom-form">
+        <input id="name" type="text" placeholder="Insert your name">
+        <input id="surname" type="text" placeholder="Insert your surname">
+        <input type="email" id="mail" placeholder="example@you.com">
+        <div id="radios">
+            <input type="radio" name="genre" value="Man" checked> Man
+            <input type="radio" name="genre" value="Women"> Woman
+            <input type="radio" name="genre" value="Other"> I prefer don't tell it
+        </div>
+        <select name="age" id="age" aria-placeholder="select your age">
+            <option value="kid">Less than 18</option>
+            <option value="19-30">19-30</option>
+            <option value="31-45">31-45</option>
+            <option value="46-55">46-55</option>
+            <option value="56+">More than 55</option>
+        </select>
+        <input type="checkbox" name="country" id="country-box"> Are you argentinian?
+        <button>submit!</button>
+    </form>
+
+    <script src="src/register.js">
+    </script>
+</body>
+
+</html>

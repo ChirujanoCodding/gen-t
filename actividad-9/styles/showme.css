@@ -1,0 +1,22 @@
+.hidden {
+    display: none;
+}
+
+#images {
+    display: flex;
+    max-width: 400px;
+    /* Cambia el valor según tus necesidades */
+    max-height: 200px;
+    /* Cambia el valor según tus necesidades */
+}
+
+
+img {
+    flex: 1;
+    margin: 5px;
+    /* Añade margen entre las imágenes si deseas */
+    width: fit-content;
+    height: fit-content;
+    max-width: 100%;
+    max-height: 100%;
+}

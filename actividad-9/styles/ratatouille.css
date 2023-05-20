@@ -1,0 +1,7 @@
+body {
+    background: url(../imgs/bg.jpg)repeat 0 0;
+}
+
+img {
+    position: fixed;
+}
