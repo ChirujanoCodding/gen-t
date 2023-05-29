@@ -57,9 +57,11 @@ const score = document.getElementById("score");
 const reset = document.getElementById("reset");
 const timer = document.getElementById("timer");
 
+const MAX_SECONDS = 5;
+
 let points = 0;
 let chosenWord;
-let seconds = 10;
+let seconds = MAX_SECONDS;
 let timerInterval;
 
 function format(number) {
@@ -77,7 +79,7 @@ const resetGame = () => {
     timer.classList.remove('timeout')
     timer.innerText = `⏳ : ${format(seconds)}'`;
     score.innerText = `🎯 : ${format(points)}`;
-    seconds = 10;
+    seconds = MAX_SECONDS;
     input.value = "";
     input.disabled = false;
     updateWord();
@@ -88,7 +90,7 @@ const handleInput = () => {
     if (input.value === chosenWord) {
         points += 1;
         input.value = "";
-        seconds = 10;
+        seconds = MAX_SECONDS;
         updateWord();
         timer.innerText = `⏳ : ${format(seconds)}'`;
         score.innerText = `🎯 : ${format(points)}`;
