@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- background -->
+    <div id="circle-1" class="circle"></div>
+    <div id="circle-2" class="circle"></div>
+    <!-- background -->
+
+    <div class="container">
+        <h1>Todo list</h1>
+        <div class="row-container">
+            <div class="input-container bordered">
+                <input type="text" class="medium-font" id="principal-input">
+                <div class="button-container">
+                    <button class="btn bg-transparent" id="add-task">
+                        <!-- Add symbol -->
+                        <img src="./icons/add.svg" alt="add">
+                    </button>
+                    <!-- Lupa -->
+                    <span id="separator" style="font-weight:500; font-size: 20px; pointer-events: none;">|</span>
+                    <button class="btn bg-transparent" id="search-task">
+                        <img src="./icons/glass.svg" alt="glass">
+                    </button>
+
+                </div>
+            </div>
+            <!-- dropdown -->
+            <select name="selector" id="folder" class="bordered medium-font custom-select">
+                <option value="progress">In progress</option>
+                <option value="done">Done</option>
+                <option value="all">All</option>
+            </select>
+        </div>
+
+
+        <!-- Task template -->
+        <div id="task-container">
+        </div>
+    </div>
+    <footer></footer>
+
+    <script type="module" src="src/database/database.js"></script>
+    <script type="module" src="src/components/task.js"></script>
+    <script type="module" src="src/index.js"></script>
+</body>
+
+</html>
