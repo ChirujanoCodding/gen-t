@@ -1,0 +1,9 @@
+.characters {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+	column-gap: 10%;
+	row-gap: 1.5%;
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+}
